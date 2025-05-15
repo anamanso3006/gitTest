@@ -1,0 +1,17 @@
+name: Github - Variáveis de Repositório
+on:
+    workflow_dispatch: #Disparo manual
+
+
+jobs:
+    variavel-de-repositorio:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Exibir variável do Repositório.
+              run: echo "O ambiente de execução é:" ${{ vars.AMBIENTE }}
+ 
+            - name: Exibir variável do Repositório
+              run: echo "País:" ${{ vars.PAIS }}
+
+            - name: Exibir variável do Repositório
+              run: echo "Estado:" ${{ vars.ESTADO }}
